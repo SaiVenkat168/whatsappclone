@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#0b6156</color>
+    <color name="purple_500">#0b6156</color>
+    <color name="purple_700">#0b6156</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="lightgrey">#EDEDED</color>
+    <color name="whatassapcolor">#0b6156</color>
+    <color name="red">#9F0B0B</color>
+    <color name="status">#009688</color>
+    <color name="chat">#8BC34A</color>
+    <color name="fb">#4267B2</color>
+    <color name="lightgreen">#e5ffcc</color>
+    <color name="settingiconcolor">#0E8374</color>
+    <color name="graybackground">#BCBCBC</color>
+
+
+
+
+
+
+</resources>
