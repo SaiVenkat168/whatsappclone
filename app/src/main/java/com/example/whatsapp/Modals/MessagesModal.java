@@ -15,6 +15,12 @@ public class MessagesModal
 
     }
 
+    public MessagesModal(String uId, String message) {
+        this.uId = uId;
+        this.message = message;
+        this.timestamp = timestamp;
+    }
+
     public String getuId() {
         return uId;
     }

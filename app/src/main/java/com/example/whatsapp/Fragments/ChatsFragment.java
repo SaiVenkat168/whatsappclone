@@ -45,13 +45,15 @@ public class ChatsFragment extends Fragment {
         database.getReference().child("Users").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                String x="";
                 list.clear();
                 for(DataSnapshot dataSnapshot:snapshot.getChildren())
                 {
                     Users users=dataSnapshot.getValue(Users.class);
                     users.getUserId(dataSnapshot.getKey());
-                    if(dataSnapshot.getKey()!=auth.getUid())
-                    list.add(users);
+                    x=users.getUserId();
+                    if(!(x.equals(auth.getCurrentUser())))
+                        list.add(users);
                 }
                 adapter.notifyDataSetChanged();
             }

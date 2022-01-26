@@ -5,6 +5,9 @@
         android:id="@+id/settings"
         android:title="Setting"/>
     <item
+        android:id="@+id/groupchat"
+        android:title="Group Chat"/>
+    <item
         android:id="@+id/logout"
         android:title="Logout"/>
 

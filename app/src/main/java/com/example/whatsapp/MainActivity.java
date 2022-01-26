@@ -29,26 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        //FirebaseDatabase database=FirebaseDatabase.getInstance();
-//        DatabaseReference myref=database.getReference("messages");
-//        myref.setValue("Hello World!");
-
-
         viewpager.setAdapter(new FragmentAdapter(getSupportFragmentManager()));
         tablayout.setupWithViewPager(viewpager);
-
-
-//        myref.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot snapshot) {
-//                String value=snapshot.getValue(String.class);
-//                Toast.makeText(MainActivity.this, ""+value, Toast.LENGTH_SHORT).show();
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError error) {
-//            }
-//        });
 
     }
     @Override
@@ -69,6 +51,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.settings:
                 Toast.makeText(MainActivity.this, "Settings .....", Toast.LENGTH_SHORT).show();
                 break;
+            case R.id.groupchat:
+                startActivity(new Intent(MainActivity.this,GroupChatActivity.class));
+
         }
         return true;
     }

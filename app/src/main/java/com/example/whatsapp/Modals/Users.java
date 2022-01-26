@@ -29,10 +29,11 @@ public class Users
         return userId;
     }
 
-    public Users(String username, String mail, String password) {
+    public Users(String username, String mail, String password,String id) {
         this.username = username;
         this.mail = mail;
         this.password = password;
+        this.userId=id;
     }
 
     public String getProfilepic() {

@@ -66,7 +66,7 @@ public class SignupActivity extends AppCompatActivity
                                 progressDialog.dismiss();
                                 if(task.isSuccessful())
                                 {
-                                    Users users=new Users(binding.etusername.getText().toString(),binding.etemail.getText().toString(),binding.etpassword.getText().toString());
+                                    Users users=new Users(binding.etusername.getText().toString(),binding.etemail.getText().toString(),binding.etpassword.getText().toString(),auth.getUid());
 
                                     String id=task.getResult().getUser().getUid();
                                     database.getReference().child("Users").child(id).setValue(users);

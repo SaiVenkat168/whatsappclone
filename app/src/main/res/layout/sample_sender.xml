@@ -25,6 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:layout_marginTop="6dp"
+            android:layout_marginRight="10dp"
             android:maxWidth="245dp"
             android:minWidth="50dp"
             android:padding="2dp"
@@ -44,9 +45,11 @@
             android:layout_marginBottom="4dp"
             android:text="12:00pm"
             android:textSize="10dp"
+            android:layout_marginRight="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/recievermessage" />
+            app:layout_constraintHorizontal_bias="0.858"
+            app:layout_constraintStart_toEndOf="@+id/sendermessage" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline3"
