@@ -12,11 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Whatsapp">
         <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
             android:name=".GroupChatActivity"
             android:exported="false" />
         <activity
             android:name=".ChatDetailActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".SignupActivity"
             android:exported="true" />
